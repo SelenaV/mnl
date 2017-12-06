@@ -1,0 +1,879 @@
+/*
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+a {
+	text-decoration: none;
+	color: black;
+	cursor: default;
+}
+/* HEADER*/
+.header-menu {
+	background: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+  	justify-content: space-around;
+  	position: fixed;
+  	width: 100%;
+}
+.logo {
+	margin:15px;
+	display: flex;
+	flex-wrap: wrap;
+	font-weight: bold;
+	font-size: 12px;
+	flex-direction: column;
+	border: 2px solid black;
+	padding: 2px;
+	width: 35px;
+	height: 35px;
+	margin: 5px;
+	align-items: center;
+  	justify-content: center;
+
+}
+.navigation { 
+	display: flex-inline;
+	flex-direction: row;
+}
+.header-menu li  {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	padding: 15px;
+}
+.navigation a {
+	color: black;
+	cursor: pointer;
+	font-weight: bolder;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+}
+.navigation a:hover {
+	color: #337ab7;
+}
+.navigation li:hover {
+	background: #F5F7FA;
+}
+.navigation ul {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.navigation ul li i {
+	margin: 0px;
+	padding: 0px;
+}
+.container, .services {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.container .left-side {
+	background-image: url(http://mnml.seoanatomy.com/wp-content/uploads/2016/12/about-background.jpg);
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+	height: auto;
+}
+.container .right-side{
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 50%;
+	padding: 50px 0px 50px 100px;
+	height: auto;
+}
+#about, #services, #pricing, #portfolio, #contact{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 45px;
+	font-weight: bolder;
+	letter-spacing: 3px;
+	font-weight: 700px;
+}
+.container .right-side hr {
+	margin: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	width: 60%;
+	align-items: center;
+	} 
+.container .right-side #blue {
+	color:#0D4494;
+	font-size: 25px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    letter-spacing: 1px;
+    width: 70%;
+    margin-bottom: 20px;
+}
+.container .right-side p {
+    color: #5E5E5E;
+    font-size: 16px;
+    width: 70%;
+    letter-spacing: 1px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.container .right-side img {
+	width: 150px;
+}
+.team {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	background: #F5F7FA;
+}
+#team {
+	font-family: 'Montserrat',sans-serif;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    font-size: 15px;
+   	text-align: center;
+    margin: 50px 50px 20px 50px;
+}
+.team .second-row {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+.team .team-mate {
+	width: 25%;
+	margin: 0px 15px;
+}
+.team .team-mate img {
+	width: 100%;
+}
+.team .team-mate h1 {
+	margin: 0px 0px 3px 0px;
+	color: #337ab7;
+	font-weight: bolder;
+	letter-spacing: 2px;
+    font: 700 12px ' Source Sans Pro', sans-serif;
+}
+.team .team-mate h2 {
+    color: #999999;
+    font: 700 12px ' Source Sans Pro', sans-serif;
+}
+.team .team-member {
+	padding: 15px;
+	background: #fff;
+}
+
+
+.cd-img-overlay { 
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(13, 68, 148, 0.9);
+    opacity: 1;
+    border-radius: 2px 2px 0 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+.cd-img-overlay span {
+	position: absolute;
+    font: 700 15px 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    color: #FFF;
+}
+
+
+
+
+
+
+
+.buy {
+	background: url('http://mnml.seoanatomy.com/wp-content/uploads/2016/12/buy-background.jpg')no-repeat bottom center fixed;
+	padding: 40px;
+	text-align: center;
+}
+.buy h2 {
+	color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.buy button {
+	-webkit-transition: all 0.1s ease-in 0s;
+    background: rgba( 13, 68, 148, 1);
+    color: #fff;
+    display: inline-block;
+    font: 700 12px 'Montserrat',sans-serif;
+    letter-spacing: 4px;
+    margin: 20px 0 10px;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    transition: all 0.1s ease-in 0s;
+}
+.services .right-side {
+	background:url('http://mnml.seoanatomy.com/wp-content/uploads/2016/12/services-background.jpg')repeat scroll 50% 0% transparent;
+	background-position: 50% 50%;
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+	height: auto;
+}
+.services .left-side {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 50%;
+	height: auto;
+	padding: 50px;
+	padding-left: 10%;
+	align-items: flex-start;
+}
+.services .left-side hr {
+	margin: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	width: 60%;
+	align-items: center;
+	} 
+.services .left-side .service-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 90%;
+}
+.services h2 {
+	color: #000;
+    font: 900 12px 'Montserrat',sans-serif;
+    letter-spacing: 2px;
+    margin: 0 0 12px 80px;
+    text-align: left;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    width: 100%;
+}
+.services p {
+	color: #5e5e5e;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 24px;
+    margin: 0 0 0 80px;
+    text-align: left;
+    padding: 0 0 30px;
+}
+.services i {
+	border: 3px solid #F5F7FA;
+    color: #0D4494;
+    cursor: pointer;
+    height: 68px;
+    width: 56px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	background: #F5F7FA;
+}
+.banner img {
+	max-width: 120px;
+	max-height: 55px;
+	margin: 40px 60px;
+}
+.pricing {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.pricing .left-side {
+	width: 50%;
+	height: auto;
+	background-position: 50% 50%;
+    background-size: cover;
+    background: url('http://mnml.seoanatomy.com/wp-content/uploads/2016/12/pricing-background.jpg') repeat scroll 50% 0% transparent;
+}
+.pricing .right-side {
+	justify-content: flex-start;
+	display: flex;
+	justify-content: center;
+	padding: 50px;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+}
+.pricing .right-side .price {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.pricing hr {
+	margin: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	width: 80%;
+	align-items: center;
+}
+.number {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	color: #000;
+	margin: 40px;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+}
+.pricing h4 {
+	margin: 0px 0px 3px 0px;
+	color: #000;
+	font-weight: bolder;
+	margin: 16px;
+	letter-spacing: 3px;
+    font: 700 12px ' Source Sans Pro', sans-serif;
+}
+.pricing p {
+	margin: 0px 0px 3px 0px;
+	color: #5E5E5E;
+	font-weight: bolder;
+	margin: 16px;
+	letter-spacing: 3px;
+	line-height: 1.42857143;
+	word-spacing: 2px;
+    font: 700 10px ' Source Sans Pro', sans-serif;
+}
+.pricing sup {
+	font-size: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.signup {
+display: flex;
+align-items: center;
+margin: 20px;
+padding: 5px 20px;
+max-height:30px;
+color: #ffffff !important;
+background: #0D4494;
+transform: rotate(-90deg);
+-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+-o-transform: rotate(-90deg);
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.price {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: left;
+}
+.banner {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	background: #F5F7FA;
+}
+.banner .advantage {
+	margin: 20px 60px;
+}
+.advantage {
+	padding: 20px 20px;
+	flex-direction: column;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.advantage p {
+	font: 400 12px'Montserrat',sans-serif;
+	color: #999999;
+    letter-spacing: 2px;
+}
+.advantage i {
+	color: #0D4494;
+	padding: 5px;
+}
+.portfolio {
+	margin: 0% 5%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.portfolio hr {
+	margin: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	width: 60%;
+	align-items: center;
+	} 
+.portfolio h1, .portfolio hr {
+	text-align: center; 
+}
+.portfolio .row {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+#brooklyn-bridge {
+	background: url('http://mnml.seoanatomy.com/wp-content/uploads/2016/12/brooklyn-bridge.jpg');
+	width: 389px;
+	height: 286px;
+}
+#autumn {
+	background: url('http://mnml.seoanatomy.com/wp-content/uploads/2016/12/autumn.jpg');
+	width: 389px;
+	height: 286px;
+}
+#windmill {
+	background: url('http://mnml.seoanatomy.com/wp-content/uploads/2016/12/windmill.jpg');
+	width: 389px;
+	height: 286px;
+}
+#parkland {
+	background: url('http://mnml.seoanatomy.com/wp-content/uploads/2016/12/parkland.jpg');
+	width: 389px;
+	height: 286px;
+}
+#forest {
+	background: url('http://mnml.seoanatomy.com/wp-content/uploads/2016/12/forest.jpg');
+	width: 389px;
+	height: 286px;
+}
+
+#plane {
+	background: url('http://mnml.seoanatomy.com/wp-content/uploads/2016/12/plane.jpg');
+	width: 389px;
+	height: 286px;
+}
+#jumping-in-nature {
+	background: url('http://mnml.seoanatomy.com/wp-content/uploads/2016/12/jumping-in-nature.jpg');
+	width: 389px;
+	height: 286px;
+}
+#frozen-nature {
+	background: url('http://mnml.seoanatomy.com/wp-content/uploads/2016/12/frozen-nature.jpg');
+	width: 389px;
+	height: 286px;
+}
+#wheat {
+	background: url('http://mnml.seoanatomy.com/wp-content/uploads/2016/12/wheat.jpg');
+	width: 389px;
+	height: 286px;
+}
+.portfolio .portfolio-gallery{
+	width: inherit;
+}
+.portfolio-image div {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	width: inherit;
+	height: inherit;
+}
+.portfolio-image div h3 {
+	color: #fff;
+    font: 700 14px "Montserrat",sans-serif;
+    letter-spacing: 4px;
+    margin-bottom: 5px;
+}
+.portfolio-image div p {
+	color: #fff;    
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.portfolio-image {
+	border: solid 0.25px white;
+}
+.nav-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.nav-gallery a {
+	text-decoration: none;
+	text-decoration-style: none;
+	color: #5e5e5e;
+	cursor: pointer;
+	font-weight: bolder;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+}
+.nav-gallery li {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	padding: 15px;
+}
+.nav-gallery a:hover{
+	color:#0D4494;
+}
+.nav-gallery ul {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+.contact {
+	background: #Fff;
+    color: #1A1A1A;
+    display: table;
+    height: auto;
+    padding: 50px 0 100px;
+    text-align: center;
+    width: 100%;
+}
+.copyright {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	text-align: center;
+	margin: 15px;
+}
+.copyright p {
+    color: #000;
+    font: 700 10px 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+}
+
+.number p {
+	text-align: left !important;
+}
+.contact-form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+	justify-content: flex-start;
+	padding-top: 50px;
+}
+.form {
+	width: 60%;
+}
+
+ .contact-info {
+	width: 40%;
+}
+.info h3 {
+	color: #0d4494;
+    font: 700 20px 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    margin: 0 0 5px;
+}
+.info p {
+	color: #000;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-align: left;
+}
+.social {
+	padding: 4px 9px;
+	margin: 10px;
+	border: none;
+    color: #fff;
+    height: 55px;
+    width: 55px;
+}
+input[type="text"], input[type="email"] {
+    background: #fff;
+    border: none;
+    border-bottom: solid black 3px;
+    color: #0d4494;
+    font: 700 11px 'Montserrat',sans-serif;
+    height: 50px;
+    letter-spacing: 4px;
+    margin: 0 0 20px;
+    padding: 5px 0 0;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    outline: 0;
+}
+.contact-form-wrap {
+    position: relative;
+}
+.contact-form-wrap input {
+	max-width: 100%;
+    vertical-align: baseline;
+    -webkit-appearance: textfield;
+    cursor: auto;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+}
+input[type="tel"] {
+    float: left;
+    background: #fff;
+    border: none;
+    border-bottom: solid black 3px;
+    color: #0d4494;
+    font: 700 11px 'Montserrat',sans-serif;
+    height: 50px;
+    letter-spacing: 4px;
+    padding: 5px 0 0;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 47%;
+    outline: 0;
+}
+select {
+    float: left;
+    border-bottom: solid black 3px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    color: #0d4494;
+    font: 700 11px 'Montserrat',sans-serif;
+    height: 39px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 50%;
+    margin: -10px 0 0 3%;
+    padding: 5px 0 10px;
+    outline: 0;
+}
+textarea {
+    word-spacing: normal;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-writing-mode: horizontal-tb;
+
+}
+textarea {
+    background: #fff;
+    border: none;
+    border-bottom: solid black 3px;
+    color: #0d4494;
+    font: 700 11px 'Montserrat',sans-serif;
+    height: 70px;
+    letter-spacing: 4px;
+    margin: 0 0 20px;
+    padding: 40px 0 0;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    outline: 0;
+}
+input[type="submit"] {
+    background: #0d4494;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font: 700 10px 'Montserrat',sans-serif;
+    letter-spacing: 4px;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s ease-in 0s;
+    transition: all 0.2s ease-in 0s;
+    width: 100%;
+    outline: 0;
+}
+.form {
+	padding: 0px 60px 60px 100px;
+}
+.social {
+	cursor: pointer;
+}
+
+#face:hover {
+	 	background: #4663a3;
+}
+#twitter:hover {
+ 	background: #40a4f7;
+}
+#link:hover {
+	background: #0c88cc;
+}
+#google:hover {
+	background: #ed311c;
+}
+#behance:hover {
+	background: #424551;
+}
+
+.fa {
+	opacity: 1;
+}
+#face {
+	background: #3B5A9B;
+}
+#twitter {
+ 	background: #2B97F0;
+}
+#google {
+	background: #DB2814;
+}
+#behance {
+	background: #131418;
+}
+#link {
+	background: #0077b5;
+}
+.social-media {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+.slider {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-image: url(http://mnml.seoanatomy.com/wp-content/uploads/2016/12/slider-1.jpg);
+	width: 100%;
+	min-height: 650px;
+	padding-top: 3.125em
+;
+}
+.slide {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: inherit;
+	min-height: 650px;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.5);
+	padding-top: 3.125em
+;
+}
+.slider .slide h2 {
+	vertical-align: middle;
+	color: #ffffff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	letter-spacing: 12px;
+	text-align: center;
+}
+.slider .slide p {
+	text-align: center;
+	display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: 15px;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1000px){
+     .container .left-side {
+     	display: none;
+     }
+     .container .right-side {
+     	width: 100%;
+     }
+     
+}
+@media screen and (max-width: 1260px) {
+	.services .left-side {
+     	width: 100%;
+     }
+    .services .right-side {
+     	display: none;
+     }
+}
+@media screen and (max-width: 622px) {
+	.signup{
+     	transform: rotate(0deg);
+     }
+}
+@media screen and (max-width: 940px) {
+	.contact-form {
+	flex-direction:column;
+}
+	.contact-info {
+	padding: 0px 60px 60px 100px;
+	width: 100%;	
+}
+.form {
+	width: 100%;
+}
+.navigation ul {
+	align-items:  center;
+	justify-content: center;
+}
+#pricing {
+	text-align: center;
+}
+.container .right-side {
+	align-items: center;
+	padding: 100px 50px 50px 50px;
+}
+.services .left-side {
+	align-items: center;
+}
+.pricing .right-side {
+	align-items: center;
+	width: 100%;
+}
+}
+@media screen and (max-width: 461px) {
+	.container .right-side {
+		padding: 150px 50px 50px 50px;
+	}
+}
+@media screen and (max-width: 891px){
+	.slider {
+		display: none;
+	}
+}
+
+
+
+
+
