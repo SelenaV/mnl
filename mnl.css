@@ -864,7 +864,11 @@ input[type="submit"] {
 }
 @media screen and (max-width: 461px) {
 	.container .right-side {
-		padding: 150px 50px 50px 50px;
+		padding: 150px 0px 50px 0px;
+	}
+	.container .right-side #blue,
+	.container .right-side p {
+		width: 90%;
 	}
 }
 @media screen and (max-width: 891px){
